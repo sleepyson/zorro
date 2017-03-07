@@ -10,7 +10,7 @@ body, header, footer {
 	margin: auto;
 }
 .pageContainer {
-	display: flex;
+	display: block;
 	max-width: 1280px;
 	width: 100%;
 	margin: auto;
@@ -86,10 +86,10 @@ footer, footer a {
 /*Galleri*/
 .pageContainerGallery {
 	display: block;
-	max-width: 1280px;
 	width: 100%;
 	margin: auto;
 	text-align: center;
+
 }
 div.galleryImage {
 	display: inline-block;
@@ -104,6 +104,18 @@ div.galleryDesc {
     padding: 10px;
     text-align: center;
     font-family: 'Raleway', sans-serif;
+}
+
+/*Biografi*/
+#bioPortrait {
+	float: right;
+	margin-right: 20px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+.bioText {
+	margin-left: 20px;
+	text-align: justify;
 }
 
 /*Kontakt*/
