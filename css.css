@@ -19,6 +19,11 @@ body, header, footer {
 }
 hr {
 	border-top: 3px dotted grey;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+#mobileNav1, #mobileNav2, #mobileNav3 {
+	display: none;
 }
 /*======================================================*/
 
@@ -29,7 +34,6 @@ hr {
 	font-size: 7em;
 	letter-spacing: 15px;
 	margin: 0px 0px auto auto;
-	max-width: 100%;
 }
 p {
 	font-family: 'Raleway', sans-serif;
@@ -40,6 +44,8 @@ h2 {
 h3 {
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
+	font-style: oblique;
+	text-decoration: underline;
 }
 /*======================================================*/
 
@@ -48,9 +54,8 @@ h3 {
 header {
 	text-align: center;
 	margin-bottom: 10px;
-	justify-content: center;
-	max-width: 100%;
-	width: 1280px;
+	max-width: 1280px;
+	width: 100%;
 }
 nav, nav a {
 	font-family: 'Fredericka the Great', cursive;
@@ -75,6 +80,9 @@ footer, footer a {
 	text-decoration: none;
 	text-transform: uppercase;
 	margin-top: 10px;
+}
+footer #toTop {
+	font-weight: bold;
 }
 /*======================================================*/
 
@@ -126,7 +134,7 @@ div.galleryDesc {
 }
 #kalender {
 	 display: block;
-	 margin-left: 30px;
+	 margin-left: 50px;
 	 max-width: 40%;
 	 max-height: 100%;
 	 height: 100%
@@ -140,8 +148,7 @@ div.galleryDesc {
 	margin: 20px;
 	text-align: justify;
 	margin-top: 30px;
-	max-width: 100%;
-	width: 800px;
+	max-width: 800px;
 }
 #viktigaHandelser p {
 	margin-bottom: 40px;
@@ -168,31 +175,43 @@ div.galleryDesc {
 }
 
 /*Kontakt-----------------------------------------------*/
+#pageContainerKontakt {
+	display: flex;
+	max-width: 1280px;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
 .kontaktSidebar {
-	display: inline-block;
-	float: right;
-	max-width: 100%;
-	margin: 20px;
-	margin-top: 30px;
-	margin-left: 20px;
+	max-width: 450px;
+	width: 40%;
+	margin: auto;
+	margin-top: 20px;
+	margin-right: 20px;
 }
 .kontaktContent {
-	display: inline-block;
-	max-width: 100%;
-	width: 800px;
-	margin-left: 20px;
+	margin: 20px;
+	margin-top: 0px;
+	max-width: 800px;
+	width: 60%;
 	text-align: justify;
 }
 .kontaktContent p {
 	margin-bottom: 40px;
 }
 #googleMap {
+	max-width: 100%;
 	border: none;
-	max-width: 100%;
 }
-textarea, fieldset, input {
-	max-width: 100%;
+textarea, input {
 	resize: vertical;
+}
+textarea {
+	width: 98%;
+}
+fieldset {
+	margin-top: 40px;
+	max-width: 100%;
 	font-family: 'Raleway', sans-serif;
 }
 legend {
@@ -202,25 +221,52 @@ legend {
 
 /*Responsive Design ====================================*/
 @media only screen and (max-width: 770px) {
-    #titel {
-    	letter-spacing: 5px;
-    	font-size: 4em;
-    }
-    nav, nav a {
-	font-size: 1em;
-	text-transform: uppercase; letter-spacing: 0.05em;
-	margin: auto;
-	max-width: 80%;
-}
+	#titel {
+		letter-spacing: normal;
+	}
 }
 
-@media only screen and (max-width: 500px) {
-    #titel {
-    	font-size: 2em;
-    }
-     nav, nav a {
-	font-size: 1em;
-	max-width: 80%;
+@media only screen and (max-width: 655px) {
+ 	#mobileNav1 {
+	display: block;
+	}
+	#mobileNavDivider1 {
+		display: none;
+	}
+	#kalender {
+		float: none;
+		max-width: 95%;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	#kalender h2 {
+		margin-bottom: 10px;
+	}
+	#googleCalendar {
+		float: none;
+		width: 95%;
+		margin: auto;
+	}
 }
+
+@media only screen and (max-width: 540px) {
+    #titel {
+		font-size: 5em;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+    #titel {
+		font-size: 3em;
+	}
+	nav {
+		font-size: 0.8em;
+	}
+	#mobileNavDivider2 {
+		display: none;
+	}
+	#mobileNav3 {
+		display: block;
+	}
 }
 /*======================================================*/
