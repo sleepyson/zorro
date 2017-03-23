@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Amatic+SC|Fredericka+the+Great|Raleway:700,400,400i,700');
+
+/*General ----------------------------------------------*/
+
+body, header, footer {
+	display: block;
+	max-width: 1280px;
+	width: auto;
+	height: auto;
+	margin: auto;
+}
+.pageContainer {
+	display: block;
+	max-width: 1280px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+hr {
+	border-top: 2px dotted grey;
+}
+/*------------------------------------------------------*/
+
+
+/*General Text -----------------------------------------*/
+#titel {
+	font-family: 'Amatic SC', cursive;
+	font-size: 7em;
+	letter-spacing: 15px;
+	margin: 0px 0px auto auto;
+}
+p {
+	font-family: 'Raleway', sans-serif;
+}
+h2 {
+	font-family: 'Playfair Display', serif;
+}
+/*------------------------------------------------------*/
+
+
+/*Header, Footer & Navigation --------------------------*/
+header {
+	text-align: center;
+	margin-bottom: 10px;
+}
+nav, nav a {
+	font-family: 'Fredericka the Great', cursive;
+	color: black;
+	text-decoration: none;
+	font-size: 1em;
+	text-transform: uppercase; letter-spacing: 0.05em;
+	margin: auto;
+	word-spacing: 5px
+}
+footer, footer a {
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.75em;
+	line-height: 0.5em;
+	color: black;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+/*------------------------------------------------------*/
+
+/*Responsive Design ------------------------------------*/
+@media only screen and (max-width: 500px) {
+    #titel {
+    	font-size: 2em;
+    }
+}
+/*------------------------------------------------------*/

@@ -97,6 +97,10 @@ footer #toTop {
 	margin-bottom: 16px;
 	width: 100%;
 }
+#benSound {
+	display: block;
+	font-size: 8px;
+}
 
 /*Galleri-----------------------------------------------*/
 .pageContainerGallery {
@@ -176,32 +180,57 @@ div.galleryDesc {
 
 /*Kontakt-----------------------------------------------*/
 #pageContainerKontakt {
-	display: flex;
+	display: block;
 	max-width: 1280px;
 	width: 100%;
 	height: 100%;
 	margin: auto;
 }
-.kontaktSidebar {
-	max-width: 450px;
-	width: 40%;
-	margin: auto;
-	margin-top: 20px;
-	margin-right: 20px;
+#pageContainerKontakt h2 {
+	display: block;
+	margin-left: 20px;
+	margin-top: 30px;
 }
-.kontaktContent {
-	margin: 20px;
-	margin-top: 0px;
-	max-width: 800px;
-	width: 60%;
+#besokStudion, #telefon, #eMail {
+	display: inline-flex;
+	max-width: 100%;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 	text-align: justify;
 }
-.kontaktContent p {
-	margin-bottom: 40px;
+#besokStudion p, #telefon p, #eMail p {
+	max-width: 600px;
+	margin-right: 20px;
+}
+#besokStudion {
+	margin-bottom: -40px;
 }
 #googleMap {
+	float: right;
 	max-width: 100%;
+	width: 600px;
+	margin: 20px;
+	margin-top: -20px;
 	border: none;
+}
+#telefonLogoContainer {
+	max-width: 100%;
+	width: 600px;
+	margin: 20px;
+	margin-bottom: -20px;
+	margin-top: -30px;
+}
+#telefonLogoContainer h2{
+	margin-left: 130px;
+	letter-spacing: 2px;
+}
+#telefonLogo, #telefonLogoMobil {
+	float: left;
+	margin-left: 20px;
+}
+#telefonLogo {
+	margin-top: 20px;
 }
 textarea, input {
 	resize: vertical;
@@ -210,8 +239,11 @@ textarea {
 	width: 98%;
 }
 fieldset {
-	margin-top: 40px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
 	max-width: 100%;
+	width: 570px;
 	font-family: 'Raleway', sans-serif;
 }
 legend {
@@ -220,6 +252,43 @@ legend {
 /*======================================================*/
 
 /*Responsive Design ====================================*/
+@media only screen and (max-width: 800px) {
+	#besokStudion, #telefon, #eMail {
+	display: block;
+	}
+	#pageContainerKontakt h2 {
+		margin-top: 40px;
+	}
+	#telefonLogoContainer h2 {
+		display: inline-flex;
+	}
+	#telefonLogoContainer {
+    	margin-bottom: 20px;
+    	margin-top: 20px;
+	}
+	#pageContainerKontakt p {
+		max-width: 100%;
+		margin-right: 10px;
+	}
+	#googleMap {
+		float: none;
+    	display: block;
+		max-width: 700px;
+		width: 95%;
+		margin: auto;
+		margin-left: 0px;
+		margin-top: 20px;
+		margin-bottom: 70px;
+	}
+	fieldset {
+		max-width: 570px;
+		width: 90%;
+		height: 100%;
+		margin: auto;
+		margin-left: 0px;
+	}
+}
+
 @media only screen and (max-width: 770px) {
 	#titel {
 		letter-spacing: normal;
@@ -253,6 +322,12 @@ legend {
     #titel {
 		font-size: 5em;
 	}
+	#googleCalendar {
+		width: 90%;
+	}
+	#telefonLogoContainer h2 {
+		margin-left: 40px;
+	}
 }
 
 @media only screen and (max-width: 400px) {
@@ -267,6 +342,12 @@ legend {
 	}
 	#mobileNav3 {
 		display: block;
+	}
+	#telefonLogoContainer {
+		margin-left: -20px;
+	}
+	#telefonLogoContainer h2 {
+		margin-left: 20px;
 	}
 }
 /*======================================================*/

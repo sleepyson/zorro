@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair|Amatic+SC|Fredericka+the+Great|Raleway|Lobster:700,400,400i,700');
+
+
+body .pageContent {
+	display: block;
+	max-width: 1440px;
+	width: 100%;
+	margin: auto;
+}
+.pageContentKontakt {
+	max-width: 800px;
+	width: 100%;
+	margin: auto;
+	margin-left: 2em;
+}
+
+h2 {
+	font-family: 'Lobster', cursive;
+}
+p {
+	font-family: 'Raleway', sans-serif;
+}
+
+#frontImage {
+	display: block;
+	position: relative; top: 0; left: 0; width: 101.5%;
+	margin-left: -1%;
+}
+
+#titel {
+	margin-top: -10px;
+	margin-bottom: -25px;
+	text-align: center;
+	font-family: 'Amatic SC', cursive;
+	font-size: 7em;
+	letter-spacing: 10px;
+}
+
+.headFoot {
+	display: block;
+	max-width: 1440px;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+footer {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase; letter-spacing: 0.1em;
+	font-size: 0.75em;
+	line-height: 0.5em;	
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+footer a {
+	text-decoration: none;
+	color: black;
+}
+
+nav {
+	font-family: 'Fredericka the Great', cursive;
+	text-align: center;
+	margin: 10px auto;
+	padding: 20px;
+	font-size: 1.075em;
+	text-transform: uppercase; letter-spacing: 0.05em;
+}
+nav > a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	text-decoration: underline;
+}
+.navDivider {
+	font-size: 0.8em;
+}
+#navKontakt {
+	text-decoration: overline;
+	font-style:
+}
+
+hr {
+  border:none;
+  border-top: 2px dotted grey;
+  width: 100%;
+}
+
+#kontaktSidebar {
+	display: inline-block;
+	max-width: 400px;
+	width: 100%;
+	margin: 2em;
+	margin-top: 0;
+	float: right;
+}
+div .pageContent #kontaktSidebar #googleMap {
+	display: block;
+	border: none;
+	width: 100%;
+}
+div .pageContent #kontaktSidebar fieldset {
+	clear: right;
+	max-width: 400px;
+	width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    #titel {
+    	font-size: 2em;
+    }
+}
